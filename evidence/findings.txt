@@ -1,0 +1,96 @@
+Website Security Assessment Findings
+
+Target:
+OWASP Juice Shop
+
+Environment:
+Local Security Testing Lab
+
+Tools Used:
+Nmap
+WhatWeb
+cURL
+Nikto
+OWASP ZAP
+
+
+Finding ID:
+WEB-01
+
+Title:
+Missing Content Security Policy Header
+
+Severity:
+Medium
+
+Description:
+The application does not implement a Content Security Policy header.
+
+Impact:
+Lack of CSP protection increases the impact of client-side attacks such as XSS.
+
+Recommendation:
+Implement a restrictive Content-Security-Policy header.
+
+
+Finding ID:
+WEB-02
+
+Title:
+Permissive CORS Configuration
+
+Severity:
+Low
+
+Description:
+The application allows cross-origin requests using Access-Control-Allow-Origin: *
+
+Impact:
+Improper CORS configuration may allow unauthorized websites to interact with resources.
+
+Recommendation:
+Restrict allowed origins to trusted domains.
+
+
+Finding ID:
+WEB-03
+
+Title:
+Third-Party JavaScript Source Inclusion
+
+Severity:
+Low
+
+Description:
+External JavaScript resources are loaded from third-party domains.
+
+Impact:
+Compromised external dependencies may affect application security.
+
+Recommendation:
+Use trusted sources and Subresource Integrity.
+
+
+Finding ID:
+WEB-04
+
+Title:
+robots.txt Directory Disclosure
+
+Severity:
+Low
+
+Description:
+robots.txt reveals the existence of the /ftp/ directory.
+
+Impact:
+Attackers may discover hidden application paths.
+
+Recommendation:
+Avoid exposing sensitive directories.
+
+
+Informational Findings:
+
+- Timestamp disclosure detected.
+- Public JavaScript comments detected.

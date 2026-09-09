@@ -1,0 +1,4 @@
+*.session
+*.db
+*.log
+.DS_Store

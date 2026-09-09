@@ -1,0 +1,19 @@
+Project: Website Security Assessment & Vulnerability Report
+
+Target:
+OWASP Juice Shop
+
+Target URL:
+http://127.0.0.1:3000
+
+Environment:
+Local Kali Linux Lab
+
+Testing Type:
+Authorized Security Assessment
+
+Tester:
+Rajih N.
+
+Date:
+09 September 2026
