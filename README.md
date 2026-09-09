@@ -46,4 +46,4 @@ This assessment was performed against OWASP Juice Shop in a controlled lab envir
 
 View the full OWASP ZAP security report:
 
-[View Security Assessment Report]([https://rajih7.github.io/Website-Security-Assessment/zap-security-report.html](https://rajih7.github.io/Website-Security-Assessment/))
+[View Security Assessment Report](https://rajih7.github.io/Website-Security-Assessment/zap-security-report.html)
